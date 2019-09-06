@@ -12,7 +12,7 @@ def load_game():
     exception = False                     # Flag to keep info whether exception was thrown or not
     while exception == False:
         print("Please choose a game to play: \n"
-              "\t1. Memory Game - a sequence of  numbers  will appear for 1 second and you have to guess it back \n"
+              "\t1. Memory Game - a sequence of numbers will appear for 1 second and you have to guess it back \n"
               "\t2. Guess Game - guess a number and see if you  chose like the computer \n")
         try:
              game_choice = int(input(">>>"))
@@ -42,11 +42,10 @@ def load_game():
         # GuessGame.set_difficulty(difficulty_choice)
         # result = GuessGame.play()
 
-
-
     # if result == True:
     #     print("                                     You won")
     #     Score.add_score(difficulty_choice)
     # else:
     #     print("                                     You lost")
     #     Score.create_zero_score()
+
