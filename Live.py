@@ -13,7 +13,7 @@ def load_game():
     exception = False                     # Flag to keep info whether exception was thrown or not
     while exception == False:
         print("Please choose a game to play: \n"
-              "\t1. Memory Game - a sequence of  numbers  will appear for 1 second and you have to guess it back \n"
+              "\t1. Memory Game - a sequence of numbers will appear for 1 second and you have to guess it back \n"
               "\t2. Guess Game - guess a number and see if you  chose like the computer \n")
         try:
              game_choice = int(input(">>>"))
