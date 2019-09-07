@@ -22,12 +22,15 @@ def compare_results(user_input, secret_number):
         return False
 
 def play(difficulty):
+    # Get random number
     random_number = generate_number(difficulty)
+    # Get user input
     user_input = get_guess_from_user(difficulty)
 
-    print(random_number, user_input)
-    #get results comparison
+    print("random number is %d , your guess is %d"%(random_number, user_input))
+    # Get results comparison
     result=compare_results(user_input,random_number)
+    # Return True / False if the user lost or won.
     if result==True:
         print("True")
         # score.add_score(difficulty)
