@@ -1,7 +1,7 @@
 import random
 import time
 from Utils import screen_cleaner
-#import score
+from Score import add_score
 
 
 def generate_sequence(difficulty):
@@ -35,6 +35,6 @@ def play(difficulty):
 
     if is_list_equal(list_a,list_b) == True:
         print("True")
-        #score.add_score(difficulty)
+        add_score(difficulty)
     else:
         print("False")
