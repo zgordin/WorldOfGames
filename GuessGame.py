@@ -1,5 +1,5 @@
 import random
-# import score
+from Score import add_score
 
 
 # Generate number that will return a random number between 1 to difficulty
@@ -33,6 +33,6 @@ def play(difficulty):
     # Return True / False if the user lost or won.
     if result==True:
         print("True")
-        # score.add_score(difficulty)
+        add_score(difficulty)
     else:
         print("False")
