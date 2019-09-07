@@ -1,6 +1,6 @@
 import random
 import time
-#from utils import screen_cleaner
+from Utils import screen_cleaner
 #import score
 
 
@@ -30,7 +30,7 @@ def play(difficulty):
     list_a = generate_sequence(difficulty)
     print(list_a)
     time.sleep(0.7)
-    # screen_cleaner()
+    screen_cleaner()
     list_b = get_list_from_user(difficulty)
 
     if is_list_equal(list_a,list_b) == True:
