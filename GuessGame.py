@@ -1,5 +1,6 @@
 import random
 # import score
+user_input = 0
 
 # Generate number that will return a random number between 1 to difficulty
 def generate_number(difficulty):
@@ -14,12 +15,19 @@ def get_guess_from_user(difficulty):
         guess = int(input("Please guess the number: \n"))
     return guess
 
-# Compare the secret generated number to the one prompted
-def compare_results(generate_number, get_guess_from_user):
-    if generate_number == get_guess_from_user:
+def compare_results(difficulty, secret_number):
+    if secret_number == user_input :
         return True
     else:
         return False
+
+
+# Compare the secret generated number to the one prompted
+# def compare_results(generate_number, get_guess_from_user):
+#     if generate_number == get_guess_from_user:
+#         return True
+#     else:
+#         return False
 
 
 def play(difficulty):
@@ -27,7 +35,7 @@ def play(difficulty):
     user_input = get_guess_from_user()
 
     print(random_number , user_input)
-    if compare_results(random_number,user_input) == True:
+    if compare_results(difficulty,random_number) == True:
         print("True")
         # score.add_score(difficulty)
     else:
