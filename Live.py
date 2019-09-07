@@ -1,6 +1,5 @@
 import MemoryGame
 import GuessGame
-# import Score
 import Utils
 
 # Function to welcome a player. It gets name and prints greeting
@@ -36,17 +35,8 @@ def load_game():
 
     if game_choice == 1:
         MemoryGame.play(difficulty_choice)
-        # MemoryGame.set_difficulty(difficulty_choice)
-        # result = MemoryGame.play()
     if game_choice == 2:
         GuessGame.play(difficulty_choice)
-        # GuessGame.set_difficulty(difficulty_choice)
-        # result = GuessGame.play()
 
-    # if result == True:
-    #     print("                                     You won")
-    #     Score.add_score(difficulty_choice)
-    # else:
-    #     print("                                     You lost")
-    #     Score.create_zero_score()
+
 
