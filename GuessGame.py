@@ -11,7 +11,7 @@ def generate_number(difficulty):
 def get_guess_from_user(difficulty):
     guess = int(input("Please guess the number between 1 and %d :"% difficulty))
     while guess > difficulty or guess < 1:
-        print("Input should be a number between 1 - ",difficulty," \n")
+        print("Input should be a number between 1 - %d\n"%difficulty)
         guess = int(input("Please guess the number: \n"))
     return guess
 
