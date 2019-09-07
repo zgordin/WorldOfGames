@@ -1,12 +1,11 @@
 # import MemoryGame
-# import GuessGame
+import GuessGame
 # import Score
 import Utils
 
 # Function to welcome a player. It gets name and prints greeting
 def welcome(name) :
     return "\nHello " + name + " and welcome to the world of Games (WoG). \nHere you can find many cool games to play\n"
-
 
 # Function to get a player to choose which play he will play and what difficulty level it will be.
 def load_game():
@@ -39,14 +38,14 @@ def load_game():
         MemoryGame.set_difficulty(difficulty_choice)
         result = MemoryGame.play()
     if game_choice == 2:
-        GuessGame.set_difficulty(difficulty_choice)
-        result = GuessGame.play()
+        GuessGame.play(difficulty_choice)
+        # GuessGame.set_difficulty(difficulty_choice)
+        # result = GuessGame.play()
 
+    # if result == True:
+    #     print("                                     You won")
+    #     Score.add_score(difficulty_choice)
+    # else:
+    #     print("                                     You lost")
+    #     Score.create_zero_score()
 
-
-    if result == True:
-        print("                                     You won")
-        Score.add_score(difficulty_choice)
-    else:
-        print("                                     You lost")
-        Score.create_zero_score()
