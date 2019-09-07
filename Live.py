@@ -1,4 +1,4 @@
-# import MemoryGame
+import MemoryGame
 import GuessGame
 # import Score
 import Utils
@@ -35,8 +35,9 @@ def load_game():
                 print(Utils.ERROR_MESSAGE())
 
     if game_choice == 1:
-        MemoryGame.set_difficulty(difficulty_choice)
-        result = MemoryGame.play()
+        MemoryGame.play(difficulty_choice)
+        # MemoryGame.set_difficulty(difficulty_choice)
+        # result = MemoryGame.play()
     if game_choice == 2:
         GuessGame.play(difficulty_choice)
         # GuessGame.set_difficulty(difficulty_choice)
