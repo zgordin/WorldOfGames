@@ -1,10 +1,9 @@
 from Live import load_game, welcome
 from Utils import screen_cleaner
-# from Utils import Pause_cmd, run_flask
-# import Utils
+from Utils import run_flask
 
-screen_cleaner()
+
+screen_cleaner() # Clean screen on new game
 print(welcome("Ziv"))
 load_game()
-# Pause_cmd()
 # run_flask()  # Rise web server to show game scores
