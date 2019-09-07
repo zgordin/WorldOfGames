@@ -7,8 +7,9 @@ def ERROR_MESSAGE():
         print("\tSomething went wrong..\n")
 
 
-def Screen_cleaner():
-    os.system("cls")
+def screen_cleaner():
+    os.system('cls')
+    # os.system('cls' if os.name == 'nt' else 'clear')
 
 def Pause_cmd():
     os.system("pause")
